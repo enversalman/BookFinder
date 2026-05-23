@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalLibrary - BookFinder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-content">
+        <h1>📚 DigitalLibrary</h1>
+        <p>Your personal reading list. Discover, save, and track.</p>
+        <div class="search-container">
+          <label for="search-input" class="visually-hidden">Search for books</label>
+          <input type="text" id="search-input" placeholder="Search for books or authors..." aria-label="Search for books">
+          <div id="search-loading" class="hidden">Searching...</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section id="error-message" class="error-banner hidden"></section>
+      
+      <section class="section">
+        <h2>Search Results</h2>
+        <div id="search-results" class="results-grid">
+          <p class="empty-state">Type to start searching...</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Your Reading List</h2>
+        <div id="reading-list" class="results-grid">
+          <p class="empty-state">Loading your reading list...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
